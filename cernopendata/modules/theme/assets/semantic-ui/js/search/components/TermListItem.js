@@ -28,6 +28,7 @@ import truncate from "lodash/truncate";
 import React from "react";
 import { Item } from "semantic-ui-react";
 
+import { stripHtml } from "../utils";
 import ListItemLabels from "./ListItemLabels";
 
 const CODTermListItem = ({ result: { metadata }, index }) => {
@@ -37,7 +38,9 @@ const CODTermListItem = ({ result: { metadata }, index }) => {
       <Item.Content>
         <Item.Header href={link}>{metadata.anchor}</Item.Header>
         <Item.Description href={link}>
-          <p>{truncate(metadata.definition, { length: 200 })}</p>
+          <p>
+            {truncate(stripHtml(metadata.short_definition), { length: 200 })}
+          </p>
         </Item.Description>
         <Item.Extra>
           <ListItemLabels metadata={metadata} />
