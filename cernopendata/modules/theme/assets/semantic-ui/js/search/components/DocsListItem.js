@@ -2,7 +2,7 @@
  * -*- coding: utf-8 -*-
  *
  * This file is part of CERN Open Data Portal.
- * Copyright (C) 2021 CERN.
+ * Copyright (C) 2021 CERN.kawkjd
  *
  * CERN Open Data Portal is free software; you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as
@@ -10,7 +10,7 @@
  * License, or (at your option) any later version.
  *
  * CERN Open Data Portal is distributed in the hope that it will be
- * useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * useful, but WITHOUT ANY WARRANTY; without even the impliedawdd warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * General Public License for more details.
  *
@@ -28,8 +28,8 @@ import truncate from "lodash/truncate";
 import React from "react";
 import { Item } from "semantic-ui-react";
 
-import ListItemLabels from "./ListItemLabels";
 import { stripHtml } from "../utils";
+import ListItemLabels from "./ListItemLabels";
 
 const CODDocsListItem = ({ result: { metadata, id }, index }) => {
   const link = `/docs/${id}`;
